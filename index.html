@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd Anniversary</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    
+    <section class="hidden">
+        <h1> Hi Milove!</h1>
+        <p> Welcome to your own very website that i specially made for you!! </p>
+    </section>
+   
+    <section class="hidden">
+        <div class="pic1">
+            <img src="pic1.PNG">
+        </div>
+        <p>Today 12-21-2023 is the most wonderful and memorable day for us!!</p>
+    </section>
+
+    <section class="hidden">
+        <h1>
+            things has been rocky for the both of us, but that didn't stop us for loving each other!!</h1>
+        <p> 
+            I just wanna let you know that whatever happens, I'll always love you no matter what happens, regardless of what people say.
+            
+        </p>
+        <p>
+            You are the most precious thing that was destined to me, 
+            and i just wanna say that even though things are so hard lately you never stopped loving me or gave me even a small doubt.</p>
+    </section>
+
+    <section>
+        
+        <div class="logos">
+            <div class="logohidden">
+                <img src="images/bothpic2.jpg">
+            </div>
+            <div class="logo hidden">
+                <img src="images/bothpic.jpg">
+            </div>
+            <div class="logo hidden">
+                <img src="images/bothpic3.jpg">
+            </div>
+            <div class="logo hidden">
+                <img src="images/picpic1.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section class="hidden">
+        <h2>I know that you don't expect me to bear any gifts or have dates for the date of our own anniversary, however...... </h2>
+        <p>
+            Surprise!!! You know that i'll always make ways for you, I'm a man of my word and you know that!
+        </p>
+    </section>
+
+    <section class="hidden">
+        <h2>
+            ALL OF THESE, all of the things that you are currently reading right now and all. 
+            all of it was created by one of the things that i love doing. </h2>
+    </section>
+
+    <section class="hidden">
+        <h2>
+            i Realized that by doing the thing i love most, while expressing my love to you in this way, would've been so amazing!!
+ </h2>
+    </section>
+
+    <section><h2>Nakakamiss naman mag billiards! lalo na kung ang ganda ng kalaro grabe!! </h2>
+    <img src= "images/billiardspic.jpg">
+    <p>sige na, maglaro na tayo ulit pleaze! lol</p>
+</section>
+
+    <section class="hidden">
+        <h2>
+           
+you know how much i love talking to computers (literally LOL) as much as i love you. </h2>
+    </section>
+
+    <section class="hidden">
+        <h2>
+            
+      so let's not make this any longer, I love you and i always will. </h2>
+      <p>kahit na lagi kang galit!! lol jk</p>
+    </section>
+
+    <section class="hidden">
+        <h2>
+            
+to more years!! even though if there's a rocky road ahead or something that we would'nt expect! </h2>
+<p>please,  no more problems!! lmao</p>
+    </section>
+
+    <section class="hidden">
+        <h2>
+            I love you so much, I truly appreciate you and everything that you do/did to me. </h2>
+    </section>
+    
+    <section class="hidden">
+        <img src="images/firstpic.jpg">
+        <h2> Our very first picture </h2>
+        <p></p>ps: I know that handwritten letters weren't really my thing, BUT! I expressed my feelings to you in a unique and actually a TOUGH way lol!
+    </p>
+        </section>
+    
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    console.log(entry);
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else {
+                        entry.target.classList.remove('show');
+                    }
+                });
+            });
+
+            const hiddenElements = document.querySelectorAll('.hidden');
+            hiddenElements.forEach((el) => observer.observe(el));
+        });
+    </script>
+
+</body>
+</html>
